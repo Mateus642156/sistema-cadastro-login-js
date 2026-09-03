@@ -1,0 +1,65 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: url("../IMG/Copilot_20260901_221737.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  backdrop-filter: brightness(0.9);
+  transition: background 0.3s, color 0.3s;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+  z-index: -1;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+
+form {
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+form {
+  margin: 20px auto;
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+}
+
+input, button {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+#perfil img {
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.dark {
+  background: url("banner-login-js-dark.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #eee;
+}
+

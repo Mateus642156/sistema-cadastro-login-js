@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <script src="JS/script.js" defer></script>
+</head>
+<body>
+    
+
+ <h1>Sistema de Cadastro e Login</h1>
+
+  <!-- Cadastro -->
+  <section id="cadastro">
+    <h2>Cadastro</h2>
+    <form id="cadastroForm">
+      <input type="text" id="cadastroNome" placeholder="Digite seu nome" required>
+      <input type="email" id="cadastroEmail" placeholder="Digite seu email" required>
+      <input type="password" id="cadastroSenha" placeholder="Digite sua senha" required>
+      <input type="text" id="cadastroFoto" placeholder="URL da foto de perfil">
+      <button type="submit">Cadastrar</button>
+    </form>
+  </section>
+
+  <!-- Login -->
+  <section id="login">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Digite seu email" required>
+      <input type="password" id="loginSenha" placeholder="Digite sua senha" required>
+      <button type="submit">Entrar</button>
+    </form>
+  </section>
+
+  <p id="mensagem"></p>
+
+  <!-- Dashboard -->
+  <section id="dashboard" style="display:none;">
+    <h2>Dashboard</h2>
+    <div id="perfil"></div>
+    <button id="sairBtn">Sair</button>
+    <button id="temaBtn">Alternar Tema</button>
+
+    <h3>Suas Tarefas</h3>
+    <form id="tarefaForm">
+      <input type="text" id="novaTarefa" placeholder="Digite uma tarefa">
+      <button type="submit">Adicionar</button>
+    </form>
+    <ul id="listaTarefas"></ul>
+
+    <h3>Estatísticas</h3>
+    <p id="estatisticas"></p>
+  </section>
+
+</body>
+</html>
